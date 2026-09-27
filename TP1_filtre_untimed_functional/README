@@ -1,0 +1,2 @@
+Makefile : ajouter CXXFLAGS = -std=gnu++98 $(OTHER) $(DEBUG)
+
