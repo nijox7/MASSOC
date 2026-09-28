@@ -18,6 +18,6 @@ public:
         SC_THREAD(do_shift);
         // sensitive << clk; // TODO -> que le front montant!
     }
-}
+};
 
 #endif // SHIFT_REGISTER_H
