@@ -7,7 +7,7 @@ CXXFLAGS = -std=gnu++0x $(OTHER) $(DEBUG)
 # CFLAGS = $(DEBUG) $(OTHER)
 
 MODULE = run
-SRCS = driver.cpp shift_register_main.cpp shift_register.cpp monitor.cpp
+SRCS = driver.cpp main.cpp shift_register.cpp monitor.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 .PHONY:	clean

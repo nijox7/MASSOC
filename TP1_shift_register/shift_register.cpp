@@ -14,7 +14,8 @@ void Shift_register::do_shift()
 {
     shift(din);
     for (int i = 0; i < 6; i++){
-        r[i].write(V[i]);
+	r.write(V);
+//	r[i].write(V[i]);
     }
-    wait(2, SC_NS);
+//    wait(2, SC_NS);
 }
