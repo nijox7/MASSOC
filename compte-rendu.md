@@ -25,6 +25,12 @@ Problème lors de l'affichage avec "trace" pour GTKWave. L'exécution provoque u
 
 
 ## Shift register
+// i = 0,  (i+1)%6 = 1%6 = 1
+// i = 1,  (i+1)%6 = 2%6 = 2
+// i = 2,  (i+1)%6 = 3%6 = 3
+// i = 3,  (i+1)%6 = 4%6 = 4
+// i = 4,  (i+1)%6 = 5%6 = 5
+// i = 5,  (i+1)%6 = 6%6 = 0
 
 ## Notes
 SC_THREAD -> processur qui s'exécute en continu (se relance tout seul indéfiniment)
