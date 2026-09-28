@@ -3,7 +3,7 @@
 
 int main(){
     sc_signal<bool> din("din");
-    sc_bv<6> r("r");
+    sc_signal<sc_bv<6>> r("r");
 
 	Shift_register sr1("Shift_register");
     sr1.din(din);
