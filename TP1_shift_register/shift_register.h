@@ -16,6 +16,7 @@ public:
     SC_CTOR(Shift_register)
     {
         SC_THREAD(do_shift);
+        sensitive positive;
         // sensitive << clk; // TODO -> que le front montant!
     }
 };

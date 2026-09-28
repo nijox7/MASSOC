@@ -1,7 +1,7 @@
 #include "shift_register.h"
 #include "driver.h"
 
-int main(){
+int sc_main(int argc,char *argv[]){
     sc_signal<bool> din("din");
     sc_signal<sc_bv<6>> r("r");
 

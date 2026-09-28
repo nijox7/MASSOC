@@ -32,6 +32,12 @@ Problème lors de l'affichage avec "trace" pour GTKWave. L'exécution provoque u
 // i = 4,  (i+1)%6 = 5%6 = 5
 // i = 5,  (i+1)%6 = 6%6 = 0
 
+"Horloges et sensitivité"
+sensitive positive
+sensitive negative
+(voir page 96 du cours 1)
+
+
 ## Notes
 SC_THREAD -> processur qui s'exécute en continu (se relance tout seul indéfiniment)
 SC_NS -> nanosecondes
