@@ -12,7 +12,10 @@ int sc_main(int argc,char *argv[]){
 	driver d1("Driver");
 	d1.din(din);
 
-//	monitor mo1("Monitor");
+    
+	monitor mo1("Monitor");
+    mo1.r(r);
+    mo1.din(din);
 
 	sc_trace_file* tfp = sc_create_vcd_trace_file("shift_register_main");
 	    sc_trace(tfp, din, din.name());
