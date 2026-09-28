@@ -1,3 +1,4 @@
+#include "systemc.h"
 #ifndef SHIFT_REGISTER_H
 #define SHIFT_REGISTER_H
 
