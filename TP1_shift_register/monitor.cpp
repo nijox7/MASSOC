@@ -3,10 +3,10 @@
 
 void monitor::prc_monitor()
 {
-  while(1) {
+  // while(1) {
     cout << "At time " << sc_time_stamp() << "::";
-//    cout << " r: " << r.read() << endl;
-    cout << " din: " << din.read() << endl;
-  }
+    cout << " din: " << m_din.read() << endl;
+    cout << " r: " << m_r.read() << endl;
+  // }
 }
 

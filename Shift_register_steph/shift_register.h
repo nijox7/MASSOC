@@ -2,23 +2,22 @@
 #ifndef SHIFT_REGISTER_H
 #define SHIFT_REGISTER_H
 
-SC_MODULE(Shift_register)
+SC_MODULE(shift)
 {
 public:
     // In/Output
     sc_in<bool> din;
-    sc_out< sc_bv<6> > r;
-    // sc_out<bool> r;
+    sc_in<bool> clk;
+    sc_out<bool> r;
     
-    // // Signal
-    // sc_bv<6> val;
+    sc_uint<6> val;
 
     void do_shift();
 
-    SC_CTOR(Shift_register) : din("din"), r("r")
+    SC_CTOR(shift) : din("din"), r("r")
     {
         SC_THREAD(do_shift);
-        sensitive << din;
+        sensitive << clk.pos();
     }
 };
 

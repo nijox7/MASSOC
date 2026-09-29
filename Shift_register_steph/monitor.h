@@ -6,8 +6,7 @@
 
 SC_MODULE(monitor)
 {
-  	sc_in<sc_bv<6>> m_r;
-	sc_in<bool> m_din;
+	sc_in<bool> m_din, m_r;
 
 	void prc_monitor();
 
