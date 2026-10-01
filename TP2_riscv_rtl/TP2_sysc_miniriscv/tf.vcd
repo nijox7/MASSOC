@@ -1,0 +1,1702 @@
+$date
+     Oct 01, 2026       11:58:44
+$end
+
+$version
+ SystemC 2.3.4-Accellera --- Aug 16 2026 17:50:15
+$end
+
+$timescale
+     1 ps
+$end
+
+$scope module SystemC $end
+$scope module cpu $end
+$scope module decod $end
+$var wire   130  aaaah  dec2exe_out_sd [129:0]  $end
+$var wire    1  aaaai  block_in_dec_sd       $end
+$var wire   32  aaaaj  rdata1_sd [31:0]  $end
+$var wire   32  aaaak  rdata2_sd [31:0]  $end
+$var wire    1  aaaal  invalid_operand_sd       $end
+$var wire    1  aaaam  stall_sd       $end
+$var wire   32  aaaan  dec2if_in_sd [31:0]  $end
+$var wire    1  aaaao  dec2if_push_sd       $end
+$var wire    1  aaaap  dec2if_full_sd       $end
+$var wire   32  aaaaq  dec2if_out_sd [31:0]  $end
+$var wire   130  aaaar  dec2exe_in_sd [129:0]  $end
+$var wire    1  aaaas  dec2exe_push_sd       $end
+$var wire    1  aaaat  dec2exe_full_sd       $end
+$var wire    1  aaaau  r_type_inst_sd       $end
+$var wire    1  aaaav  i_type_inst_sd       $end
+$var wire    1  aaaaw  s_type_inst_sd       $end
+$var wire    1  aaaax  b_type_inst_sd       $end
+$var wire    1  aaaay  u_type_inst_sd       $end
+$var wire    1  aaaaz  j_type_inst_sd       $end
+$var wire    1  aaaba  jalr_type_inst_sd       $end
+$var wire    1  aaabb  add_i_sd       $end
+$var wire    1  aaabc  slt_i_sd       $end
+$var wire    1  aaabd  sltu_i_sd       $end
+$var wire    1  aaabe  and_i_sd       $end
+$var wire    1  aaabf  or_i_sd       $end
+$var wire    1  aaabg  xor_i_sd       $end
+$var wire    1  aaabh  sll_i_sd       $end
+$var wire    1  aaabi  srl_i_sd       $end
+$var wire    1  aaabj  sub_i_sd       $end
+$var wire    1  aaabk  sra_i_sd       $end
+$var wire    1  aaabl  addi_i_sd       $end
+$var wire    1  aaabm  slti_i_sd       $end
+$var wire    1  aaabn  sltiu_i_sd       $end
+$var wire    1  aaabo  andi_i_sd       $end
+$var wire    1  aaabp  ori_i_sd       $end
+$var wire    1  aaabq  xori_i_sd       $end
+$var wire    1  aaabr  jalr_i_sd       $end
+$var wire    1  aaabs  slli_i_sd       $end
+$var wire    1  aaabt  srli_i_sd       $end
+$var wire    1  aaabu  srai_i_sd       $end
+$var wire    1  aaabv  lw_i_sd       $end
+$var wire    1  aaabw  lh_i_sd       $end
+$var wire    1  aaabx  lhu_i_sd       $end
+$var wire    1  aaaby  lb_i_sd       $end
+$var wire    1  aaabz  lbu_i_sd       $end
+$var wire    1  aaaca  beq_i_sd       $end
+$var wire    1  aaacb  bne_i_sd       $end
+$var wire    1  aaacc  blt_i_sd       $end
+$var wire    1  aaacd  bge_i_sd       $end
+$var wire    1  aaace  bltu_i_sd       $end
+$var wire    1  aaacf  bgeu_i_sd       $end
+$var wire    1  aaacg  lui_i_sd       $end
+$var wire    1  aaach  auipc_i_sd       $end
+$var wire    1  aaaci  jal_i_sd       $end
+$var wire    1  aaacj  sw_i_sd       $end
+$var wire    1  aaack  sh_i_sd       $end
+$var wire    1  aaacl  sb_i_sd       $end
+$var wire   32  aaacm  offset_branch_sd [31:0]  $end
+$var wire    1  aaacn  inc_pc_sd       $end
+$var wire    1  aaaco  jump_sd       $end
+$var wire    6  aaacp  adr_dest_sd [5:0]  $end
+$var wire   32  aaacq  exe_op1_sd [31:0]  $end
+$var wire   32  aaacr  exe_op2_sd [31:0]  $end
+$var wire   32  aaacs  mem_data_sd [31:0]  $end
+$var wire    2  aaact  mem_size_sd [1:0]  $end
+$var wire    1  aaacu  mem_load_sd       $end
+$var wire    1  aaacv  mem_store_sd       $end
+$var wire    2  aaacw  exe_cmd_sd [1:0]  $end
+$var wire    2  aaacx  optype_sd [1:0]  $end
+$var wire    1  aaacy  exe_neg_op2_sd       $end
+$var wire    1  aaacz  exe_wb_sd       $end
+$var wire    1  aaada  mem_sign_extend_sd       $end
+$var wire    1  aaajr  RESET       $end
+$var wire    1  aaajs  CLK       $end
+$var wire    6  aaajt  BP_RADR2_RD [5:0]  $end
+$var wire    6  aaaju  BP_RADR1_RD [5:0]  $end
+$var wire    1  aaajv  BP_MEM2WBK_EMPTY_SM       $end
+$var wire   32  aaajw  BP_MEM_RES_RM [31:0]  $end
+$var wire    6  aaajx  BP_DEST_RM [5:0]  $end
+$var wire    1  aaajy  BP_EXE2MEM_EMPTY_SE       $end
+$var wire    1  aaajz  BP_MEM_LOAD_RE       $end
+$var wire   32  aaaka  BP_EXE_RES_RE [31:0]  $end
+$var wire    6  aaakb  BP_DEST_RE [5:0]  $end
+$var wire    1  aaakc  DEC2EXE_EMPTY_SD       $end
+$var wire    1  aaakd  DEC2EXE_POP_SE       $end
+$var wire    1  aaake  IF2DEC_POP_SD       $end
+$var wire    1  aaakf  IF2DEC_EMPTY_SI       $end
+$var wire   32  aaakg  PC_RI [31:0]  $end
+$var wire   32  aaakh  INSTR_RI [31:0]  $end
+$var wire   32  aaaki  PC_RD [31:0]  $end
+$var wire    1  aaakj  DEC2IF_EMPTY_SD       $end
+$var wire    1  aaakk  DEC2IF_POP_SI       $end
+$var wire    2  aaakl  MEM_SIZE_RD [1:0]  $end
+$var wire    1  aaakm  MEM_SIGN_EXTEND_RD       $end
+$var wire    1  aaakn  MEM_STORE_RD       $end
+$var wire    1  aaako  MEM_LOAD_RD       $end
+$var wire   32  aaakp  MEM_DATA_RD [31:0]  $end
+$var wire    3  aaakq  OPTYPE_RD [2:0]  $end
+$var wire    6  aaakr  EXE_DEST_SD [5:0]  $end
+$var wire    1  aaaks  WB_RD       $end
+$var wire    1  aaakt  NEG_OP2_RD       $end
+$var wire    2  aaaku  EXE_CMD_RD [1:0]  $end
+$var wire   32  aaakv  OP2_RD [31:0]  $end
+$var wire   32  aaakw  OP1_RD [31:0]  $end
+$var wire    1  aaakx  WRITE_PC_ENABLE_SD       $end
+$var wire   32  aaaky  WRITE_PC_SD [31:0]  $end
+$var wire   32  aaakz  READ_PC_SR [31:0]  $end
+$var wire   32  aaala  RDATA2_SR [31:0]  $end
+$var wire   32  aaalb  RDATA1_SR [31:0]  $end
+$var wire    6  aaalc  RADR2_SD [5:0]  $end
+$var wire    6  aaald  RADR1_SD [5:0]  $end
+$scope module dec2exe $end
+$var wire    1  aaaag  valid       $end
+$var wire   130  aaajb  DATAOUT_R [129:0]  $end
+$var wire    1  aaajc  EMPTY_S       $end
+$var wire    1  aaajd  FULL_S       $end
+$var wire    1  aaaje  POP_S       $end
+$var wire    1  aaajf  PUSH_S       $end
+$var wire   130  aaajg  DATAIN_S [129:0]  $end
+$var wire    1  aaajh  RESET       $end
+$var wire    1  aaaji  CLK       $end
+$upscope $end
+$scope module dec2if $end
+$var wire    1  aaaaf  valid       $end
+$var wire   32  aaajj  DATAOUT_R [31:0]  $end
+$var wire    1  aaajk  EMPTY_S       $end
+$var wire    1  aaajl  FULL_S       $end
+$var wire    1  aaajm  POP_S       $end
+$var wire    1  aaajn  PUSH_S       $end
+$var wire   32  aaajo  DATAIN_S [31:0]  $end
+$var wire    1  aaajp  RESET       $end
+$var wire    1  aaajq  CLK       $end
+$upscope $end
+$upscope $end
+$scope module exec $end
+$var wire   32  aaadb  exe_res_se [31:0]  $end
+$var wire   76  aaadc  exe2mem_din_se [75:0]  $end
+$var wire   76  aaadd  exe2mem_dout_se [75:0]  $end
+$var wire   32  aaade  op1_se [31:0]  $end
+$var wire   32  aaadf  op2_se [31:0]  $end
+$var wire   32  aaadg  alu_in_op2_se [31:0]  $end
+$var wire   32  aaadh  alu_out_se [31:0]  $end
+$var wire   32  aaadi  shifter_out_se [31:0]  $end
+$var wire   32  aaadj  mem_data_se [31:0]  $end
+$var wire    5  aaadk  shift_val_se [4:0]  $end
+$var wire    1  aaadl  exe2mem_push_se       $end
+$var wire    1  aaadm  exe2mem_full_se       $end
+$var wire    1  aaadn  wb_re       $end
+$var wire    1  aaado  mem_load_re       $end
+$var wire    1  aaadp  mem_store_re       $end
+$var wire    1  aaadq  invalid_operand_se       $end
+$var wire    1  aaahy  RESET       $end
+$var wire    1  aaahz  CLK       $end
+$var wire    1  aaaia  MEM_STORE_RE       $end
+$var wire    1  aaaib  MEM_LOAD_RE       $end
+$var wire    1  aaaic  MEM_SIGN_EXTEND_RE       $end
+$var wire    2  aaaid  MEM_SIZE_RE [1:0]  $end
+$var wire   32  aaaie  MEM_DATA_RE [31:0]  $end
+$var wire    1  aaaif  WB_RE       $end
+$var wire    6  aaaig  DEST_RE [5:0]  $end
+$var wire   32  aaaih  EXE_RES_RE [31:0]  $end
+$var wire    1  aaaii  DEC2EXE_POP_SE       $end
+$var wire    1  aaaij  DEC2EXE_EMPTY_SD       $end
+$var wire    1  aaaik  EXE2MEM_EMPTY_SE       $end
+$var wire    1  aaail  EXE2MEM_POP_SM       $end
+$var wire    1  aaaim  MEM_STORE_RD       $end
+$var wire    1  aaain  MEM_LOAD_RD       $end
+$var wire    1  aaaio  MEM_SIGN_EXTEND_RD       $end
+$var wire    2  aaaip  MEM_SIZE_RD [1:0]  $end
+$var wire   32  aaaiq  MEM_DATA_RD [31:0]  $end
+$var wire    2  aaair  CMD_RD [1:0]  $end
+$var wire    3  aaais  OPTYPE_RD [2:0]  $end
+$var wire    1  aaait  NEG_OP2_RD       $end
+$var wire    1  aaaiu  WB_RD       $end
+$var wire    6  aaaiv  DEST_RD [5:0]  $end
+$var wire    1  aaaiw  BLOCK_BP_RD       $end
+$var wire    6  aaaix  RADR2_RD [5:0]  $end
+$var wire    6  aaaiy  RADR1_RD [5:0]  $end
+$var wire   32  aaaiz  OP2_RD [31:0]  $end
+$var wire   32  aaaja  OP1_RD [31:0]  $end
+$scope module alu $end
+$var wire   32  aaaht  RES_SE [31:0]  $end
+$var wire    2  aaahu  CMD_SE [1:0]  $end
+$var wire    1  aaahv  CIN_SE       $end
+$var wire   32  aaahw  OP2_SE [31:0]  $end
+$var wire   32  aaahx  OP1_SE [31:0]  $end
+$upscope $end
+$scope module exe2mem $end
+$var wire    1  aaadr  valid       $end
+$var wire   76  aaahh  DATAOUT_R [75:0]  $end
+$var wire    1  aaahi  EMPTY_S       $end
+$var wire    1  aaahj  FULL_S       $end
+$var wire    1  aaahk  POP_S       $end
+$var wire    1  aaahl  PUSH_S       $end
+$var wire   76  aaahm  DATAIN_S [75:0]  $end
+$var wire    1  aaahn  RESET       $end
+$var wire    1  aaaho  CLK       $end
+$upscope $end
+$scope module shifter $end
+$var wire   32  aaahp  DOUT_SE [31:0]  $end
+$var wire    2  aaahq  CMD_SE [1:0]  $end
+$var wire    5  aaahr  SHIFT_VAL_SE [4:0]  $end
+$var wire   32  aaahs  DIN_SE [31:0]  $end
+$upscope $end
+$upscope $end
+$scope module ifetch $end
+$var wire    1  aaaaa  IF2DEC_PUSH_SI       $end
+$var wire    1  aaaab  IF2DEC_FULL_SI       $end
+$var wire   64  aaaac  if2dec_in_si [63:0]  $end
+$var wire   64  aaaad  if2dec_out_si [63:0]  $end
+$var wire    1  aaalm  RESET       $end
+$var wire    1  aaaln  CLK       $end
+$var wire   32  aaalo  PC_RD [31:0]  $end
+$var wire   32  aaalp  INSTR_RI [31:0]  $end
+$var wire   32  aaalq  PC_RI [31:0]  $end
+$var wire    1  aaalr  IF2DEC_EMPTY_SI       $end
+$var wire    1  aaals  IF2DEC_POP_SD       $end
+$var wire    1  aaalt  IF2DEC_FLUSH_SD       $end
+$var wire    1  aaalu  DEC2IF_POP_SI       $end
+$var wire    1  aaalv  DEC2IF_EMPTY_SD       $end
+$var wire    1  aaalw  ADR_VALID_SI       $end
+$var wire   32  aaalx  ADR_SI [31:0]  $end
+$var wire    1  aaaly  IC_STALL_SI       $end
+$var wire   32  aaalz  IC_INST_SI [31:0]  $end
+$scope module if2dec $end
+$var wire    1  aaaae  valid       $end
+$var wire   64  aaale  DATAOUT_R [63:0]  $end
+$var wire    1  aaalf  EMPTY_S       $end
+$var wire    1  aaalg  FULL_S       $end
+$var wire    1  aaalh  POP_S       $end
+$var wire    1  aaali  PUSH_S       $end
+$var wire   64  aaalj  DATAIN_S [63:0]  $end
+$var wire    1  aaalk  RESET       $end
+$var wire    1  aaall  CLK       $end
+$upscope $end
+$upscope $end
+$scope module mem $end
+$var wire    1  aaads  mem2wbk_push_sm       $end
+$var wire    1  aaadt  mem2wbk_full_sm       $end
+$var wire   38  aaadu  mem2wbk_din_sm [37:0]  $end
+$var wire   38  aaadv  mem2wbk_dout_sm [37:0]  $end
+$var wire   32  aaadw  data_sm [31:0]  $end
+$var wire    1  aaadx  wb_sm       $end
+$var wire    1  aaagi  RESET       $end
+$var wire    1  aaagj  CLK       $end
+$var wire    1  aaagk  WB_RM       $end
+$var wire    6  aaagl  DEST_RM [5:0]  $end
+$var wire   32  aaagm  MEM_RES_RM [31:0]  $end
+$var wire    1  aaagn  MEM2WBK_EMPTY_SM       $end
+$var wire    1  aaago  MEM2WBK_POP_SW       $end
+$var wire    1  aaagp  EXE2MEM_POP_SM       $end
+$var wire    1  aaagq  EXE2MEM_EMPTY_SE       $end
+$var wire    1  aaagr  STORE_RE       $end
+$var wire    1  aaags  LOAD_RE       $end
+$var wire    1  aaagt  SIGN_EXTEND_RE       $end
+$var wire    1  aaagu  WB_RE       $end
+$var wire    2  aaagv  MEM_SIZE_RE [1:0]  $end
+$var wire    6  aaagw  DEST_RE [5:0]  $end
+$var wire   32  aaagx  MEM_DATA_RE [31:0]  $end
+$var wire   32  aaagy  EXE_RES_RE [31:0]  $end
+$var wire    2  aaagz  MEM_SIZE_SM [1:0]  $end
+$var wire    1  aaaha  MCACHE_STALL_SM       $end
+$var wire   32  aaahb  MCACHE_RESULT_SM [31:0]  $end
+$var wire    1  aaahc  MCACHE_LOAD_SM       $end
+$var wire    1  aaahd  MCACHE_STORE_SM       $end
+$var wire    1  aaahe  MCACHE_ADR_VALID_SM       $end
+$var wire   32  aaahf  MCACHE_DATA_SM [31:0]  $end
+$var wire   32  aaahg  MCACHE_ADR_SM [31:0]  $end
+$scope module mem2wbk $end
+$var wire    1  aaady  valid       $end
+$var wire   38  aaaga  DATAOUT_R [37:0]  $end
+$var wire    1  aaagb  EMPTY_S       $end
+$var wire    1  aaagc  FULL_S       $end
+$var wire    1  aaagd  POP_S       $end
+$var wire    1  aaage  PUSH_S       $end
+$var wire   38  aaagf  DATAIN_S [37:0]  $end
+$var wire    1  aaagg  RESET       $end
+$var wire    1  aaagh  CLK       $end
+$upscope $end
+$upscope $end
+$scope module reg $end
+$var wire   32  aaadz  PC_RR [31:0]  $end
+$var wire   32  aaaea  REG_0 [31:0]  $end
+$var wire   32  aaaeb  REG_1 [31:0]  $end
+$var wire   32  aaaec  REG_2 [31:0]  $end
+$var wire   32  aaaed  REG_3 [31:0]  $end
+$var wire   32  aaaee  REG_4 [31:0]  $end
+$var wire   32  aaaef  REG_5 [31:0]  $end
+$var wire   32  aaaeg  REG_6 [31:0]  $end
+$var wire   32  aaaeh  REG_7 [31:0]  $end
+$var wire   32  aaaei  REG_8 [31:0]  $end
+$var wire   32  aaaej  REG_9 [31:0]  $end
+$var wire   32  aaaek  REG_10 [31:0]  $end
+$var wire   32  aaael  REG_11 [31:0]  $end
+$var wire   32  aaaem  REG_12 [31:0]  $end
+$var wire   32  aaaen  REG_13 [31:0]  $end
+$var wire   32  aaaeo  REG_14 [31:0]  $end
+$var wire   32  aaaep  REG_15 [31:0]  $end
+$var wire   32  aaaeq  REG_16 [31:0]  $end
+$var wire   32  aaaer  REG_17 [31:0]  $end
+$var wire   32  aaaes  REG_18 [31:0]  $end
+$var wire   32  aaaet  REG_19 [31:0]  $end
+$var wire   32  aaaeu  REG_20 [31:0]  $end
+$var wire   32  aaaev  REG_21 [31:0]  $end
+$var wire   32  aaaew  REG_22 [31:0]  $end
+$var wire   32  aaaex  REG_23 [31:0]  $end
+$var wire   32  aaaey  REG_24 [31:0]  $end
+$var wire   32  aaaez  REG_25 [31:0]  $end
+$var wire   32  aaafa  REG_26 [31:0]  $end
+$var wire   32  aaafb  REG_27 [31:0]  $end
+$var wire   32  aaafc  REG_28 [31:0]  $end
+$var wire   32  aaafd  REG_29 [31:0]  $end
+$var wire   32  aaafe  REG_30 [31:0]  $end
+$var wire   32  aaaff  REG_31 [31:0]  $end
+$var wire   32  aaafg  READ_PC_SR [31:0]  $end
+$var wire    1  aaafh  WRITE_PC_ENABLE_SD       $end
+$var wire   32  aaafi  WRITE_PC_SD [31:0]  $end
+$var wire   32  aaafj  WDATA_SW [31:0]  $end
+$var wire    1  aaafk  WENABLE_SW       $end
+$var wire    6  aaafl  WADR_SW [5:0]  $end
+$var wire   32  aaafm  RDATA2_SR [31:0]  $end
+$var wire   32  aaafn  RDATA1_SR [31:0]  $end
+$var wire    6  aaafo  RADR2_SD [5:0]  $end
+$var wire    6  aaafp  RADR1_SD [5:0]  $end
+$upscope $end
+$scope module wbk $end
+$var wire    1  aaafq  RESET       $end
+$var wire    1  aaafr  CLK       $end
+$var wire    1  aaafs  MEM2WBK_POP_SW       $end
+$var wire    1  aaaft  MEM2WBK_EMPTY_SM       $end
+$var wire    1  aaafu  WB_RM       $end
+$var wire    6  aaafv  DEST_RM [5:0]  $end
+$var wire   32  aaafw  MEM_RES_RM [31:0]  $end
+$var wire    1  aaafx  WENABLE_SW       $end
+$var wire   32  aaafy  WDATA_SW [31:0]  $end
+$var wire    6  aaafz  WADR_SW [5:0]  $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+0aaaaa
+0aaaab
+b0 aaaac
+b0 aaaad
+0aaaae
+0aaaaf
+0aaaag
+b0 aaaah
+0aaaai
+b0 aaaaj
+b0 aaaak
+0aaaal
+1aaaam
+b10000000001010100 aaaan
+1aaaao
+0aaaap
+b0 aaaaq
+b0 aaaar
+0aaaas
+0aaaat
+0aaaau
+0aaaav
+0aaaaw
+0aaaax
+0aaaay
+0aaaaz
+0aaaba
+0aaabb
+0aaabc
+0aaabd
+0aaabe
+0aaabf
+0aaabg
+0aaabh
+0aaabi
+0aaabj
+0aaabk
+0aaabl
+0aaabm
+0aaabn
+0aaabo
+0aaabp
+0aaabq
+0aaabr
+0aaabs
+0aaabt
+0aaabu
+0aaabv
+0aaabw
+0aaabx
+0aaaby
+0aaabz
+0aaaca
+0aaacb
+0aaacc
+0aaacd
+0aaace
+0aaacf
+0aaacg
+0aaach
+0aaaci
+0aaacj
+0aaack
+0aaacl
+b0 aaacm
+0aaacn
+0aaaco
+b0 aaacp
+b0 aaacq
+b0 aaacr
+b0 aaacs
+b0 aaact
+0aaacu
+0aaacv
+b0 aaacw
+b0 aaacx
+0aaacy
+0aaacz
+0aaada
+b0 aaadb
+b0 aaadc
+b0 aaadd
+b0 aaade
+b0 aaadf
+b0 aaadg
+b0 aaadh
+b0 aaadi
+b0 aaadj
+b0 aaadk
+0aaadl
+0aaadm
+0aaadn
+0aaado
+0aaadp
+0aaadq
+0aaadr
+0aaads
+0aaadt
+b0 aaadu
+b0 aaadv
+b0 aaadw
+0aaadx
+0aaady
+b10000000001010000 aaadz
+b0 aaaea
+b0 aaaeb
+b0 aaaec
+b0 aaaed
+b0 aaaee
+b0 aaaef
+b0 aaaeg
+b0 aaaeh
+b0 aaaei
+b0 aaaej
+b0 aaaek
+b0 aaael
+b0 aaaem
+b0 aaaen
+b0 aaaeo
+b0 aaaep
+b0 aaaeq
+b0 aaaer
+b0 aaaes
+b0 aaaet
+b0 aaaeu
+b0 aaaev
+b0 aaaew
+b0 aaaex
+b0 aaaey
+b0 aaaez
+b0 aaafa
+b0 aaafb
+b0 aaafc
+b0 aaafd
+b0 aaafe
+b0 aaaff
+b10000000001010000 aaafg
+1aaafh
+b10000000001010100 aaafi
+b0 aaafj
+0aaafk
+b0 aaafl
+b0 aaafm
+b0 aaafn
+b0 aaafo
+b0 aaafp
+0aaafq
+1aaafr
+0aaafs
+1aaaft
+0aaafu
+b0 aaafv
+b0 aaafw
+0aaafx
+b0 aaafy
+b0 aaafz
+b0 aaaga
+1aaagb
+0aaagc
+0aaagd
+0aaage
+b0 aaagf
+0aaagg
+1aaagh
+0aaagi
+1aaagj
+0aaagk
+b0 aaagl
+b0 aaagm
+1aaagn
+0aaago
+0aaagp
+1aaagq
+0aaagr
+0aaags
+0aaagt
+0aaagu
+b0 aaagv
+b0 aaagw
+b0 aaagx
+b0 aaagy
+b0 aaagz
+0aaaha
+b0 aaahb
+0aaahc
+0aaahd
+0aaahe
+b0 aaahf
+b0 aaahg
+b0 aaahh
+1aaahi
+0aaahj
+0aaahk
+0aaahl
+b0 aaahm
+0aaahn
+1aaaho
+b0 aaahp
+b0 aaahq
+b0 aaahr
+b0 aaahs
+b0 aaaht
+b0 aaahu
+0aaahv
+b0 aaahw
+b0 aaahx
+0aaahy
+1aaahz
+0aaaia
+0aaaib
+0aaaic
+b0 aaaid
+b0 aaaie
+0aaaif
+b0 aaaig
+b0 aaaih
+0aaaii
+1aaaij
+1aaaik
+0aaail
+0aaaim
+0aaain
+0aaaio
+b0 aaaip
+b0 aaaiq
+b0 aaair
+b0 aaais
+0aaait
+0aaaiu
+b0 aaaiv
+0aaaiw
+b0 aaaix
+b0 aaaiy
+b0 aaaiz
+b0 aaaja
+b0 aaajb
+1aaajc
+0aaajd
+0aaaje
+0aaajf
+b0 aaajg
+0aaajh
+1aaaji
+b0 aaajj
+1aaajk
+0aaajl
+0aaajm
+1aaajn
+b10000000001010100 aaajo
+0aaajp
+1aaajq
+0aaajr
+1aaajs
+b0 aaajt
+b0 aaaju
+1aaajv
+b0 aaajw
+b0 aaajx
+1aaajy
+0aaajz
+b0 aaaka
+b0 aaakb
+1aaakc
+0aaakd
+0aaake
+1aaakf
+b0 aaakg
+b0 aaakh
+b0 aaaki
+1aaakj
+0aaakk
+b0 aaakl
+0aaakm
+0aaakn
+0aaako
+b0 aaakp
+b0 aaakq
+b0 aaakr
+0aaaks
+0aaakt
+b0 aaaku
+b0 aaakv
+b0 aaakw
+1aaakx
+b10000000001010100 aaaky
+b10000000001010000 aaakz
+b0 aaala
+b0 aaalb
+b0 aaalc
+b0 aaald
+b0 aaale
+1aaalf
+0aaalg
+0aaalh
+0aaali
+b0 aaalj
+0aaalk
+1aaall
+0aaalm
+1aaaln
+b0 aaalo
+b0 aaalp
+b0 aaalq
+1aaalr
+0aaals
+0aaalt
+0aaalu
+1aaalv
+0aaalw
+b0 aaalx
+0aaaly
+b0 aaalz
+$end
+
+#500
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+0aaall
+0aaaln
+
+#1000
+1aaaaa
+b10000000001010100 aaaac
+1aaaaf
+1aaafr
+1aaagh
+1aaagj
+1aaaho
+1aaahz
+1aaaji
+b10000000001010100 aaajj
+0aaajk
+1aaajm
+1aaajq
+1aaajs
+b10000000001010100 aaaki
+0aaakj
+1aaakk
+1aaali
+b10000000001010100 aaalj
+1aaall
+1aaaln
+b10000000001010100 aaalo
+1aaalu
+0aaalv
+1aaalw
+b10000000001010100 aaalx
+
+#1500
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+0aaall
+0aaaln
+
+#2000
+b10000000001010100 aaaad
+1aaaae
+0aaaam
+1aaaas
+1aaafr
+1aaagh
+1aaagj
+1aaaho
+1aaahz
+1aaajf
+1aaaji
+1aaajq
+1aaajs
+1aaake
+0aaakf
+b10000000001010100 aaakg
+b10000000001010100 aaale
+0aaalf
+1aaalh
+1aaall
+1aaaln
+b10000000001010100 aaalq
+0aaalr
+1aaals
+
+#2500
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+0aaall
+0aaaln
+
+#3000
+b100000000010001000000010011001100000000000000010000000001010100 aaaac
+1aaaag
+b10000000001011000 aaaan
+1aaadl
+b10000000001010100 aaadz
+b10000000001010100 aaafg
+b10000000001011000 aaafi
+1aaafq
+1aaafr
+1aaagg
+1aaagh
+1aaagi
+1aaagj
+1aaahl
+1aaahn
+1aaaho
+1aaahy
+1aaahz
+1aaaii
+0aaaij
+0aaajc
+1aaaje
+1aaajh
+1aaaji
+b10000000001011000 aaajo
+1aaajp
+1aaajq
+1aaajr
+1aaajs
+0aaakc
+1aaakd
+b10000000001011000 aaaky
+b10000000001010100 aaakz
+b100000000010001000000010011001100000000000000010000000001010100 aaalj
+1aaalk
+1aaall
+1aaalm
+1aaaln
+b1000000000100010000000100110011 aaalz
+
+#3500
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+0aaall
+0aaaln
+
+#4000
+b100000000010001000000010011001100000000000000010000000001011000 aaaac
+b100000000010001000000010011001100000000000000010000000001010100 aaaad
+b10000000001011100 aaaan
+b10000001000000000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000001000 aaaar
+1aaaau
+1aaabj
+b10 aaacp
+1aaacy
+1aaacz
+1aaadr
+1aaads
+b10000000001011000 aaadz
+b10000000001011000 aaafg
+b10000000001011100 aaafi
+b1 aaafo
+b10 aaafp
+1aaafr
+1aaage
+1aaagh
+1aaagj
+1aaagp
+0aaagq
+1aaahe
+0aaahi
+1aaahk
+1aaaho
+1aaahz
+0aaaik
+1aaail
+b10000001000000000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000001000 aaajg
+1aaaji
+b10000000001011000 aaajj
+b10000000001011100 aaajo
+1aaajq
+1aaajs
+0aaajy
+b1000000000100010000000100110011 aaakh
+b10000000001011000 aaaki
+b10000000001011100 aaaky
+b10000000001011000 aaakz
+b1 aaalc
+b10 aaald
+b100000000010001000000010011001100000000000000010000000001010100 aaale
+b100000000010001000000010011001100000000000000010000000001011000 aaalj
+1aaall
+1aaaln
+b10000000001011000 aaalo
+b1000000000100010000000100110011 aaalp
+b10000000001011000 aaalx
+
+#4500
+b100000000000000101110111100000000000000010000000001011000 aaaac
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+b100000000000000101110111100000000000000010000000001011000 aaalj
+0aaall
+0aaaln
+b1000000000000001011101111 aaalz
+
+#5000
+0aaaaa
+b100000000000000101110111100000000000000010000000001011100 aaaac
+b100000000000000101110111100000000000000010000000001011000 aaaad
+b10000001000000000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000001000 aaaah
+b10000000001101000 aaaan
+b1000000000101110000000000000000000000000000000000010000000000000000000000000000000000000000000010100 aaaar
+0aaaau
+1aaaaz
+0aaabj
+1aaaci
+b10000 aaacm
+1aaaco
+b101 aaacp
+b10000000001011100 aaacq
+0aaacy
+b1000000100000000000000000000000000000000000000000000000000000000000000000 aaadc
+b11111111111111111111111111111111 aaadg
+1aaady
+b10000000001011100 aaadz
+b10000000001011100 aaafg
+b10000000001101000 aaafi
+b0 aaafo
+b0 aaafp
+1aaafr
+1aaafs
+0aaaft
+0aaagb
+1aaagd
+1aaagh
+1aaagj
+0aaagn
+1aaago
+b1000000100000000000000000000000000000000000000000000000000000000000000000 aaahm
+1aaaho
+1aaahv
+b11111111111111111111111111111111 aaahw
+1aaahz
+1aaait
+1aaaiu
+b10 aaaiv
+b1 aaaix
+b10 aaaiy
+b10000001000000000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000001000 aaajb
+b1000000000101110000000000000000000000000000000000010000000000000000000000000000000000000000000010100 aaajg
+1aaaji
+b10000000001011100 aaajj
+b10000000001101000 aaajo
+1aaajq
+1aaajs
+b1 aaajt
+b10 aaaju
+0aaajv
+b10000000001011000 aaakg
+b1000000000000001011101111 aaakh
+b10000000001011100 aaaki
+b10 aaakr
+1aaaks
+1aaakt
+b10000000001101000 aaaky
+b10000000001011100 aaakz
+b0 aaalc
+b0 aaald
+b100000000000000101110111100000000000000010000000001011000 aaale
+0aaali
+b100000000000000101110111100000000000000010000000001011100 aaalj
+1aaall
+1aaaln
+b10000000001011100 aaalo
+b1000000000000001011101111 aaalp
+b10000000001011000 aaalq
+1aaalt
+0aaalw
+b10000000001011100 aaalx
+
+#5500
+b1000000000000000100000000000000010000000001011100 aaaac
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+b1000000000000000100000000000000010000000001011100 aaalj
+0aaall
+0aaaln
+b10000000000000001 aaalz
+
+#6000
+1aaaaa
+b1000000000000000100000000000000010000000001101000 aaaac
+0aaaae
+b1000000000101110000000000000000000000000000000000010000000000000000000000000000000000000000000010100 aaaah
+1aaaam
+b10000000001101100 aaaan
+b1000000000110100000000000000000000000000000000000010000000000000000000000000000000000000000000010100 aaaar
+0aaaas
+b10000000001101000 aaacq
+b10000000001011100 aaadb
+b1000001010000000000000000000000000000000000000000000000010000000001011100 aaadc
+b1000000100000000000000000000000000000000000000000000000000000000000000000 aaadd
+b10000000001011100 aaade
+b0 aaadg
+b10000000001011100 aaadh
+b10001000000000000000000000000000000000 aaadu
+1aaadx
+b10000000001101000 aaadz
+b10000000001101000 aaafg
+b10000000001101100 aaafi
+1aaafr
+b10001000000000000000000000000000000000 aaagf
+1aaagh
+1aaagj
+1aaagu
+b10 aaagw
+b1000000100000000000000000000000000000000000000000000000000000000000000000 aaahh
+b1000001010000000000000000000000000000000000000000000000010000000001011100 aaahm
+1aaaho
+b10000000001011100 aaahs
+b10000000001011100 aaaht
+0aaahv
+b0 aaahw
+b10000000001011100 aaahx
+1aaahz
+1aaaif
+b10 aaaig
+0aaait
+b101 aaaiv
+b0 aaaix
+b0 aaaiy
+b10000000001011100 aaaja
+b1000000000101110000000000000000000000000000000000010000000000000000000000000000000000000000000010100 aaajb
+0aaajf
+b1000000000110100000000000000000000000000000000000010000000000000000000000000000000000000000000010100 aaajg
+1aaaji
+b10000000001101000 aaajj
+b10000000001101100 aaajo
+1aaajq
+1aaajs
+b0 aaajt
+b0 aaaju
+b10 aaakb
+0aaake
+1aaakf
+b10000000001101000 aaaki
+b101 aaakr
+0aaakt
+b10000000001011100 aaakw
+b10000000001101100 aaaky
+b10000000001101000 aaakz
+1aaalf
+0aaalh
+1aaali
+b1000000000000000100000000000000010000000001101000 aaalj
+1aaall
+1aaaln
+b10000000001101000 aaalo
+1aaalr
+0aaals
+0aaalt
+1aaalw
+b10000000001101000 aaalx
+
+#6500
+b101110000000001010001001100000000000000010000000001101000 aaaac
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+b101110000000001010001001100000000000000010000000001101000 aaalj
+0aaall
+0aaaln
+b1011100000000010100010011 aaalz
+
+#7000
+b101110000000001010001001100000000000000010000000001101100 aaaac
+b101110000000001010001001100000000000000010000000001101000 aaaad
+1aaaae
+0aaaag
+0aaaam
+b10000000001110000 aaaan
+b10111010000000000000000000000000000000000000000000101000 aaaar
+1aaaas
+1aaaav
+0aaaaz
+1aaabl
+0aaaci
+b0 aaacm
+0aaaco
+b1010 aaacp
+b0 aaacq
+b10111 aaacr
+b1000001010000000000000000000000000000000000000000000000010000000001011100 aaadd
+0aaadl
+b10010100000000000000010000000001011100 aaadu
+b10001000000000000000000000000000000000 aaadv
+b10000000001011100 aaadw
+b10000000001101100 aaadz
+b10000000001101100 aaafg
+b10000000001110000 aaafi
+1aaafk
+b10 aaafl
+1aaafr
+1aaafu
+b10 aaafv
+1aaafx
+b10 aaafz
+b10001000000000000000000000000000000000 aaaga
+b10010100000000000000010000000001011100 aaagf
+1aaagh
+1aaagj
+1aaagk
+b10 aaagl
+b101 aaagw
+b10000000001011100 aaagy
+b10000000001011100 aaahg
+b1000001010000000000000000000000000000000000000000000000010000000001011100 aaahh
+0aaahl
+1aaaho
+1aaahz
+b101 aaaig
+b10000000001011100 aaaih
+0aaaii
+1aaaij
+1aaajc
+0aaaje
+1aaajf
+b10111010000000000000000000000000000000000000000000101000 aaajg
+1aaaji
+b10000000001101100 aaajj
+b10000000001110000 aaajo
+1aaajq
+1aaajs
+b10 aaajx
+b10000000001011100 aaaka
+b101 aaakb
+1aaakc
+0aaakd
+1aaake
+0aaakf
+b10000000001101000 aaakg
+b1011100000000010100010011 aaakh
+b10000000001101100 aaaki
+b10000000001110000 aaaky
+b10000000001101100 aaakz
+b101110000000001010001001100000000000000010000000001101000 aaale
+0aaalf
+1aaalh
+b101110000000001010001001100000000000000010000000001101100 aaalj
+1aaall
+1aaaln
+b10000000001101100 aaalo
+b1011100000000010100010011 aaalp
+b10000000001101000 aaalq
+0aaalr
+1aaals
+b10000000001101100 aaalx
+
+#7500
+b10000000001101100 aaaac
+0aaafr
+0aaagh
+0aaagj
+b10000000000000001 aaahb
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+b10000000001101100 aaalj
+0aaall
+0aaaln
+b0 aaalz
+
+#8000
+b10000000001110000 aaaac
+b10000000001101100 aaaad
+1aaaag
+b10111010000000000000000000000000000000000000000000101000 aaaah
+b10000000001110100 aaaan
+b0 aaaar
+0aaaav
+0aaabl
+b0 aaacp
+b0 aaacr
+0aaacz
+b10111 aaadb
+b1000010100000000000000000000000000000000000000000000000000000000000010111 aaadc
+b0 aaade
+b10111 aaadf
+b10111 aaadg
+b10111 aaadh
+b10111 aaadk
+1aaadl
+0aaadr
+0aaads
+b10010100000000000000010000000001011100 aaadv
+b10000000001110000 aaadz
+b10000000001110000 aaafg
+b10000000001110100 aaafi
+b10000000001011100 aaafj
+b101 aaafl
+1aaafr
+b101 aaafv
+b10000000001011100 aaafw
+b10000000001011100 aaafy
+b101 aaafz
+b10010100000000000000010000000001011100 aaaga
+0aaage
+1aaagh
+1aaagj
+b101 aaagl
+b10000000001011100 aaagm
+0aaagp
+1aaagq
+0aaahe
+1aaahi
+0aaahk
+1aaahl
+b1000010100000000000000000000000000000000000000000000000000000000000010111 aaahm
+1aaaho
+b10111 aaahr
+b0 aaahs
+b10111 aaaht
+b10111 aaahw
+b0 aaahx
+1aaahz
+1aaaii
+0aaaij
+1aaaik
+0aaail
+b1010 aaaiv
+b10111 aaaiz
+b0 aaaja
+b10111010000000000000000000000000000000000000000000101000 aaajb
+0aaajc
+1aaaje
+b0 aaajg
+1aaaji
+b10000000001110000 aaajj
+b10000000001110100 aaajo
+1aaajq
+1aaajs
+b10000000001011100 aaajw
+b101 aaajx
+1aaajy
+0aaakc
+1aaakd
+b10000000001101100 aaakg
+b0 aaakh
+b10000000001110000 aaaki
+b1010 aaakr
+b10111 aaakv
+b0 aaakw
+b10000000001110100 aaaky
+b10000000001110000 aaakz
+b10000000001101100 aaale
+b10000000001110000 aaalj
+1aaall
+1aaaln
+b10000000001110000 aaalo
+b0 aaalp
+b10000000001101100 aaalq
+b10000000001110000 aaalx
+
+#8500
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+0aaall
+0aaaln
+
+#9000
+b10000000001110100 aaaac
+b10000000001110000 aaaad
+b0 aaaah
+b10000000001111000 aaaan
+b0 aaadb
+b0 aaadc
+b1000010100000000000000000000000000000000000000000000000000000000000010111 aaadd
+b0 aaadf
+b0 aaadg
+b0 aaadh
+b0 aaadk
+1aaadr
+1aaads
+b10101000000000000000000000000000010111 aaadu
+b10111 aaadw
+0aaady
+b10000000001110100 aaadz
+b10000000001011100 aaaef
+b10000000001110100 aaafg
+b10000000001111000 aaafi
+0aaafk
+1aaafr
+0aaafs
+1aaaft
+0aaafx
+1aaagb
+0aaagd
+1aaage
+b10101000000000000000000000000000010111 aaagf
+1aaagh
+1aaagj
+1aaagn
+0aaago
+1aaagp
+0aaagq
+b1010 aaagw
+b10111 aaagy
+1aaahe
+b10100 aaahg
+b1000010100000000000000000000000000000000000000000000000000000000000010111 aaahh
+0aaahi
+1aaahk
+b0 aaahm
+1aaaho
+b0 aaahr
+b0 aaaht
+b0 aaahw
+1aaahz
+b1010 aaaig
+b10111 aaaih
+0aaaik
+1aaail
+0aaaiu
+b0 aaaiv
+b0 aaaiz
+b0 aaajb
+1aaaji
+b10000000001110100 aaajj
+b10000000001111000 aaajo
+1aaajq
+1aaajs
+1aaajv
+0aaajy
+b10111 aaaka
+b1010 aaakb
+b10000000001110000 aaakg
+b10000000001110100 aaaki
+b0 aaakr
+0aaaks
+b0 aaakv
+b10000000001111000 aaaky
+b10000000001110100 aaakz
+b10000000001110000 aaale
+b10000000001110100 aaalj
+1aaall
+1aaaln
+b10000000001110100 aaalo
+b10000000001110000 aaalq
+b10000000001110100 aaalx
+
+#9500
+0aaafr
+0aaagh
+0aaagj
+b0 aaahb
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+0aaall
+0aaaln
+
+#10000
+b10000000001111000 aaaac
+b10000000001110100 aaaad
+b10000000001111100 aaaan
+b0 aaadd
+b0 aaadu
+b10101000000000000000000000000000010111 aaadv
+b0 aaadw
+0aaadx
+1aaady
+b10000000001111000 aaadz
+b10000000001111000 aaafg
+b10000000001111100 aaafi
+b10111 aaafj
+1aaafk
+b1010 aaafl
+1aaafr
+1aaafs
+0aaaft
+b1010 aaafv
+b10111 aaafw
+1aaafx
+b10111 aaafy
+b1010 aaafz
+b10101000000000000000000000000000010111 aaaga
+0aaagb
+1aaagd
+b0 aaagf
+1aaagh
+1aaagj
+b1010 aaagl
+b10111 aaagm
+0aaagn
+1aaago
+0aaagu
+b0 aaagw
+b0 aaagy
+b0 aaahg
+b0 aaahh
+1aaaho
+1aaahz
+0aaaif
+b0 aaaig
+b0 aaaih
+1aaaji
+b10000000001111000 aaajj
+b10000000001111100 aaajo
+1aaajq
+1aaajs
+0aaajv
+b10111 aaajw
+b1010 aaajx
+b0 aaaka
+b0 aaakb
+b10000000001110100 aaakg
+b10000000001111000 aaaki
+b10000000001111100 aaaky
+b10000000001111000 aaakz
+b10000000001110100 aaale
+b10000000001111000 aaalj
+1aaall
+1aaaln
+b10000000001111000 aaalo
+b10000000001110100 aaalq
+b10000000001111000 aaalx
+
+#10500
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+0aaall
+0aaaln
+
+#11000
+b10000000001111100 aaaac
+b10000000001111000 aaaad
+b10000000010000000 aaaan
+b0 aaadv
+b10000000001111100 aaadz
+b10111 aaaek
+b10000000001111100 aaafg
+b10000000010000000 aaafi
+b0 aaafj
+0aaafk
+b0 aaafl
+1aaafr
+0aaafu
+b0 aaafv
+b0 aaafw
+0aaafx
+b0 aaafy
+b0 aaafz
+b0 aaaga
+1aaagh
+1aaagj
+0aaagk
+b0 aaagl
+b0 aaagm
+1aaaho
+1aaahz
+1aaaji
+b10000000001111100 aaajj
+b10000000010000000 aaajo
+1aaajq
+1aaajs
+b0 aaajw
+b0 aaajx
+b10000000001111000 aaakg
+b10000000001111100 aaaki
+b10000000010000000 aaaky
+b10000000001111100 aaakz
+b10000000001111000 aaale
+b10000000001111100 aaalj
+1aaall
+1aaaln
+b10000000001111100 aaalo
+b10000000001111000 aaalq
+b10000000001111100 aaalx
+
+#11500
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+0aaall
+0aaaln
+
+#12000
+b10000000010000000 aaaac
+b10000000001111100 aaaad
+b10000000010000100 aaaan
+b10000000010000000 aaadz
+b10000000010000000 aaafg
+b10000000010000100 aaafi
+1aaafr
+1aaagh
+1aaagj
+1aaaho
+1aaahz
+1aaaji
+b10000000010000000 aaajj
+b10000000010000100 aaajo
+1aaajq
+1aaajs
+b10000000001111100 aaakg
+b10000000010000000 aaaki
+b10000000010000100 aaaky
+b10000000010000000 aaakz
+b10000000001111100 aaale
+b10000000010000000 aaalj
+1aaall
+1aaaln
+b10000000010000000 aaalo
+b10000000001111100 aaalq
+b10000000010000000 aaalx
+
+#12500
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+0aaall
+0aaaln
+
+#13000
+b10000000010000100 aaaac
+b10000000010000000 aaaad
+b10000000010001000 aaaan
+b10000000010000100 aaadz
+b10000000010000100 aaafg
+b10000000010001000 aaafi
+1aaafr
+1aaagh
+1aaagj
+1aaaho
+1aaahz
+1aaaji
+b10000000010000100 aaajj
+b10000000010001000 aaajo
+1aaajq
+1aaajs
+b10000000010000000 aaakg
+b10000000010000100 aaaki
+b10000000010001000 aaaky
+b10000000010000100 aaakz
+b10000000010000000 aaale
+b10000000010000100 aaalj
+1aaall
+1aaaln
+b10000000010000100 aaalo
+b10000000010000000 aaalq
+b10000000010000100 aaalx
+
+#13500
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+0aaall
+0aaaln
+
+#14000
+b10000000010001000 aaaac
+b10000000010000100 aaaad
+b10000000010001100 aaaan
+b10000000010001000 aaadz
+b10000000010001000 aaafg
+b10000000010001100 aaafi
+1aaafr
+1aaagh
+1aaagj
+1aaaho
+1aaahz
+1aaaji
+b10000000010001000 aaajj
+b10000000010001100 aaajo
+1aaajq
+1aaajs
+b10000000010000100 aaakg
+b10000000010001000 aaaki
+b10000000010001100 aaaky
+b10000000010001000 aaakz
+b10000000010000100 aaale
+b10000000010001000 aaalj
+1aaall
+1aaaln
+b10000000010001000 aaalo
+b10000000010000100 aaalq
+b10000000010001000 aaalx
+
+#14500
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+0aaall
+0aaaln
+
+#15000
+b10000000010001100 aaaac
+b10000000010001000 aaaad
+b10000000010010000 aaaan
+b10000000010001100 aaadz
+b10000000010001100 aaafg
+b10000000010010000 aaafi
+1aaafr
+1aaagh
+1aaagj
+1aaaho
+1aaahz
+1aaaji
+b10000000010001100 aaajj
+b10000000010010000 aaajo
+1aaajq
+1aaajs
+b10000000010001000 aaakg
+b10000000010001100 aaaki
+b10000000010010000 aaaky
+b10000000010001100 aaakz
+b10000000010001000 aaale
+b10000000010001100 aaalj
+1aaall
+1aaaln
+b10000000010001100 aaalo
+b10000000010001000 aaalq
+b10000000010001100 aaalx
+
+#15500
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+0aaall
+0aaaln
+
+#16000
+b10000000010010000 aaaac
+b10000000010001100 aaaad
+b10000000010010100 aaaan
+b10000000010010000 aaadz
+b10000000010010000 aaafg
+b10000000010010100 aaafi
+1aaafr
+1aaagh
+1aaagj
+1aaaho
+1aaahz
+1aaaji
+b10000000010010000 aaajj
+b10000000010010100 aaajo
+1aaajq
+1aaajs
+b10000000010001100 aaakg
+b10000000010010000 aaaki
+b10000000010010100 aaaky
+b10000000010010000 aaakz
+b10000000010001100 aaale
+b10000000010010000 aaalj
+1aaall
+1aaaln
+b10000000010010000 aaalo
+b10000000010001100 aaalq
+b10000000010010000 aaalx
+
+#16500
+0aaafr
+0aaagh
+0aaagj
+0aaaho
+0aaahz
+0aaaji
+0aaajq
+0aaajs
+0aaall
+0aaaln
+

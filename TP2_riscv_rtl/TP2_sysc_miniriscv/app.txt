@@ -1,0 +1,26 @@
+
+app:     file format elf32-littleriscv
+
+
+Disassembly of section .text.reset:
+
+00010050 <_reset>:
+   10050:	0001                	nop
+   10052:	0091                	addi	ra,ra,4
+   10054:	40110133          	sub	sp,sp,ra
+   10058:	010002ef          	jal	t0,10068 <main>
+   1005c:	0001                	nop
+   1005e:	0001                	nop
+
+00010060 <_good>:
+   10060:	0001                	nop
+   10062:	0001                	nop
+
+00010064 <_bad>:
+   10064:	0001                	nop
+   10066:	0001                	nop
+
+Disassembly of section .text:
+
+00010068 <main>:
+   10068:	01700513          	li	a0,23
