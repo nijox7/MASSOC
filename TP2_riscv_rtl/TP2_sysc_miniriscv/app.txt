@@ -24,3 +24,4 @@ Disassembly of section .text:
 
 00010068 <main>:
    10068:	01700513          	li	a0,23
+   1006c:	ff5ff06f          	j	10060 <_good>
