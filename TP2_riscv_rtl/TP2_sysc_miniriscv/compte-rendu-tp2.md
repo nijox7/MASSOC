@@ -52,7 +52,7 @@ On observe ce résultat:
 
 Le processeur charge les segments de texte, ne trouve aucun instruction, puis exécute le programme de *reset.s*. 
 
-### Test de l'instruction add
+### Test de l'instruction addi
 
 On crée l'application suivante:
 >>
