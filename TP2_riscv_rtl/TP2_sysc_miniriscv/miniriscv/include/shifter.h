@@ -24,7 +24,11 @@ SC_MODULE(shifter) {
      dans shifter.cpp, pour qu'ils apparaissent dans GTKWAVE
     */
 
+    void shift();
     void trace(sc_trace_file * tf);
 
-    SC_CTOR(shifter) {}
+    SC_CTOR(shifter) {
+        SC_METHOD(shift);
+        sensitive << DIN_SE << SHIFT_VAL_SE << CMD_SE;
+    }
 };
