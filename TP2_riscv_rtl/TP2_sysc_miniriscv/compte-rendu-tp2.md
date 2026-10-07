@@ -93,14 +93,19 @@ En observant le chronogramme on voit que PC_RI prend la valeur 10060 corresponda
 
 ### Test de l'instruction addi
 
-On crée l'application suivante:
+On fait le test de l'application suivante:
 >>
-    .global main
-    main:
-            addi x0, x0, 1
-            addi a0, a0, 1
-            add  x0, a0, x0
-            beq  x0, a0, fail_add
-            j _good
-    fail_add:
-            j _bad
+    00010068 <main>:
+        10068:	058d                addi	a1,a1,3
+        1006a:	00100013          	li	zero,1
+        1006e:	0509                addi	a0,a0,2
+        10070:	00050033          	add	zero,a0,zero
+        10074:	00058463          	beqz	a1,1007c <add_success>
+        10078:	fedff06f          	j	10064 <_bad>
+
+    0001007c <add_success>:
+        1007c:	fe5ff06f          	j	10060 <_good>
+(structure de l'application obtenue avec la commande riscv32-unknown-elf-objdump)
+
+
+On observe sur Gtkwave que l'on passe bien de l'adresse 10074 à l'adresse 1007c ce qui signifie que le branchement a fonctionné confirmant le succès de l'instruction *add*.
