@@ -24,11 +24,16 @@ Disassembly of section .text:
 
 00010068 <main>:
    10068:	4511                	li	a0,4
-   1006a:	4585                	li	a1,1
-   1006c:	4609                	li	a2,2
-   1006e:	95b2                	add	a1,a1,a2
-   10070:	00b50463          	beq	a0,a1,10078 <add_success>
-   10074:	ff1ff06f          	j	10064 <_bad>
+   1006a:	0001                	nop
+   1006c:	4585                	li	a1,1
+   1006e:	0001                	nop
+   10070:	4609                	li	a2,2
+   10072:	0001                	nop
+   10074:	95b2                	add	a1,a1,a2
+   10076:	0001                	nop
+   10078:	00b50563          	beq	a0,a1,10082 <add_success>
+   1007c:	0001                	nop
+   1007e:	fe7ff06f          	j	10064 <_bad>
 
-00010078 <add_success>:
-   10078:	fe9ff06f          	j	10060 <_good>
+00010082 <add_success>:
+   10082:	fdfff06f          	j	10060 <_good>
