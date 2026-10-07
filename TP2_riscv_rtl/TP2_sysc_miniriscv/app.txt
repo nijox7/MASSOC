@@ -23,12 +23,12 @@ Disassembly of section .text.reset:
 Disassembly of section .text:
 
 00010068 <main>:
-   10068:	058d                	addi	a1,a1,3
-   1006a:	00100013          	li	zero,1
-   1006e:	0509                	addi	a0,a0,2
-   10070:	00050033          	add	zero,a0,zero
-   10074:	00058463          	beqz	a1,1007c <add_success>
-   10078:	fedff06f          	j	10064 <_bad>
+   10068:	4511                	li	a0,4
+   1006a:	4585                	li	a1,1
+   1006c:	4609                	li	a2,2
+   1006e:	95b2                	add	a1,a1,a2
+   10070:	00b50463          	beq	a0,a1,10078 <add_success>
+   10074:	ff1ff06f          	j	10064 <_bad>
 
-0001007c <add_success>:
-   1007c:	fe5ff06f          	j	10060 <_good>
+00010078 <add_success>:
+   10078:	fe9ff06f          	j	10060 <_good>
